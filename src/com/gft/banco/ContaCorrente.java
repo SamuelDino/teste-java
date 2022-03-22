@@ -11,4 +11,9 @@ public class ContaCorrente extends Conta{
     public BigDecimal rendimento() {
         return saldo.multiply(BigDecimal.valueOf(0.03));
     }
+
+    @Override
+    public BigDecimal calcularImposto() {
+        return saldo.multiply(BigDecimal.valueOf(0.25));
+    }
 }

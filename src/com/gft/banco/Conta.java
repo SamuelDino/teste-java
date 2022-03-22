@@ -2,7 +2,7 @@ package com.gft.banco;
 
 import java.math.BigDecimal;
 
-public abstract class Conta {
+public abstract class Conta implements Imposto{
     private static int proxNumero = 1000;
     protected final int numero;
     protected Titular titular;
